@@ -1,11 +1,11 @@
 let numberOfList = +prompt('Сколько фильмов вы посмотрели?:', '');
 
 let personalMovieDB = {
-    count = numberOfList,
-    movies = {},
-    actors = {},
-    genres = [],
-    privat = false
+    count : numberOfList,
+    movies : {},
+    actors : {},
+    genres : [],
+    privat : false
 };
 
 const a = prompt('Какой последний фильм вы помсотрели?:', ''),
