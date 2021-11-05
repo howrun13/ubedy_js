@@ -10,3 +10,6 @@ personalMovieDB.privat = false;
 let lastMovie = prompt("Какой последний фильм вы помсотрели?:");
 let scoreMovie = prompt("На сколько оцените его?:");
 
+personalMovieDB.movies[lastMovie] = scoreMovie;
+
+console.log (personalMovieDB.movies)
