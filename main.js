@@ -1,15 +1,20 @@
-let numberOfList = prompt("Сколько фильмов вы посмотрели?:");
+let numberOfList = +prompt('Сколько фильмов вы посмотрели?:', '');
 
-let personalMovieDB = new Object();
-personalMovieDB.count = numberOfList;
-personalMovieDB.movies = new Object();
-personalMovieDB.actors = new Object();
-personalMovieDB.genres = new Array();
-personalMovieDB.privat = false;
+let personalMovieDB = {
+    count = numberOfList,
+    movies = {},
+    actors = {},
+    genres = [],
+    privat = false
+};
 
-let lastMovie = prompt("Какой последний фильм вы помсотрели?:");
-let scoreMovie = prompt("На сколько оцените его?:");
+const a = prompt('Какой последний фильм вы помсотрели?:', ''),
+      b = prompt('На сколько оцените его?:', ''),
+      c = prompt('Какой последний фильм вы помсотрели?:', ''),
+      d = prompt('На сколько оцените его?:', '');
 
-personalMovieDB.movies[lastMovie] = scoreMovie;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log (personalMovieDB.movies)
+
+console.log (personalMovieDB)
