@@ -18,3 +18,16 @@ personalMovieDB.movies[c] = d;
 
 
 console.log (personalMovieDB)
+
+//Практическое задание №2
+
+if (personalMovieDB.count < 10){
+    consosle.log ('Просмотренно довольно мало фильмов');
+}   else if (10 < personalMovieDB.count < 30){
+        console.log("Вы классический зритель");
+    } else if ( personalMovieDB.count > 30){
+        console.log("Вы киноман");
+    } else {
+        console.log("Произошла ошибка");
+    }
+
